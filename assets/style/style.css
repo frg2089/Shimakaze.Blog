@@ -1,11 +1,14 @@
-html,
-body,
-main{
+html, body, main {
   height: 100%;
 }
 
-main{
+main {
   display: flex;
+}
+
+#onLoadingPage {
+  text-align: center;
+  margin: auto;
 }
 
 *::-webkit-scrollbar {
@@ -18,16 +21,15 @@ main{
   background: rgba(200, 200, 200, 0.8);
   border-radius: 6px;
 }
-    
-@media(prefers-color-scheme: dark){
-  body>main>div.onLoadingPage{
-    color:azure;
-  }
 
-  body{
-    background-color:rgb(39,40,34);
-  }
 
+@media(prefers-color-scheme: dark) {
+  #onLoadingPage {
+    color: azure;
+  }
+  body {
+    background-color: rgb(39, 40, 34);
+  }
   *::-webkit-scrollbar-thumb {
     background: rgba(180, 180, 180, 0.2);
   }
