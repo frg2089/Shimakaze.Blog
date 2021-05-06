@@ -121,6 +121,10 @@ function config(options: WebpackOptions): webpack.Configuration {
             from: path.join(dir_assets, 'manifest.json'),
             to: 'manifest.json'
           },
+          {
+            from: path.join(dir_assets, '.nojekyll'),
+            to: ''
+          },
         ]
       }),
       new WorkboxPlugin.GenerateSW({
@@ -146,6 +150,9 @@ function config(options: WebpackOptions): webpack.Configuration {
           }, {
             urlPattern: /.*\.css/,
             handler: 'NetworkFirst'
+          }, {
+            urlPattern: /.*\.md/,
+            handler: 'CacheFirst'
           }, {
             urlPattern: /.*\.(?:png|jpg|jpeg|svg|gif)/,
             handler: 'CacheFirst', // 缓存优先
