@@ -1,0 +1,17 @@
+{
+  "files.autoSave": "onFocusChange",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.suggest.completeFunctionCalls": true,
+  "typescript.referencesCodeLens.showOnAllFunctions": true,
+  "typescript.referencesCodeLens.enabled": true,
+  "typescript.preferences.quoteStyle": "single",
+  "typescript.preferences.importModuleSpecifierEnding": "minimal",
+  "typescript.locale": "zh-CN",
+  "typescript.implementationsCodeLens.enabled": true,
+  "typescript.format.semicolons": "remove",
+  "typescript.format.insertSpaceAfterTypeAssertion": true,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "js/ts.implicitProjectConfig.strictNullChecks": true,
+  "editor.tabSize": 2,
+}
