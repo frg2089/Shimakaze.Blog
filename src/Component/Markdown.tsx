@@ -12,7 +12,7 @@ import React from 'react'
 import ReactMarkdown from "react-markdown"
 import { Components } from 'react-markdown/src/ast-to-react'
 import { PrismAsync as SyntaxHighlighter } from 'react-syntax-highlighter'
-import hltheme from "../vsc-dark-plus"
+import { vscDarkPlus as hltheme} from 'react-syntax-highlighter/dist/esm/styles/prism'
 import rehypeRaw from 'rehype-raw'
 import gfm from "remark-gfm"
 import toc from "remark-toc"
