@@ -30,7 +30,7 @@
     <script>
       window.onload = function () {
         if (!!window.ActiveXObject || "ActiveXObject" in window) {
-          document.querySelector('main div').innerHTML = "<h1>加载失败</h1>"
+          document.getElementById('onLoadingPage').innerHTML = "<h1>加载失败</h1>"
             + "<h2>本网站不支持使用Internet Explorer</h2>"
             + "<h2>请您更换您的浏览器</h2>"
             + "<a href=\"https://www.microsoft.com/edge\">Microsoft Edge</a><br/>"
